@@ -32,9 +32,9 @@ async def on_raw_reaction_add(payload):
         if message.thread:
             return
 
-        await message.create_thread(
-            name=f"🦇 Conversa de {message.author.display_name}",
-            auto_archive_duration=1440
+       await message.create_thread(
+    name=f"📜 Audiência de {message.author.display_name}",
+    auto_archive_duration=1440
         )
 
     except Exception as e:
